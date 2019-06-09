@@ -7,7 +7,7 @@ NotificationFile = '/home/dell/Desktop/python project/notify.txt'
   
 def checkNotifications(): 
     fileName = open(NotificationFile, 'r') 
-    today = time.strftime('%m%d') 
+    today = time.strftime('%Y%m%d') 
     flag = 0
     for line in fileName: 
         if today in line: 
